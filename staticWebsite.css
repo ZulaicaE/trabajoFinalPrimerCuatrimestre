@@ -1,0 +1,33 @@
+body {
+    background-color: #010409;
+}
+
+.navbar {
+    border-bottom-style: solid;
+    border-color: lightslategray;
+    border-width: 2px;
+}
+
+.resumen {
+    color: white;
+    background-color: rgba(43, 48, 53, 1);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 2px;
+    border-style: solid;
+    border-color: lightslategray;
+    border-radius: 0px;
+    border-width: 1px;
+}
+
+.games {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.game {
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
