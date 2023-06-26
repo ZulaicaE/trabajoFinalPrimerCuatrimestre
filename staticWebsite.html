@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -27,192 +30,280 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">JUEGOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PELICULAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERIES</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            ESTA PÁGINA
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#games-ref">Juegos</a></li>
+                            <li><a class="dropdown-item" href="#opinion-final">Resumen</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <div class="conteiner-fluid resumen">Resumen DLSADKASD</div>
+    <div class="conteiner-fluid resumen">
+        <h4 class="exclamando">-EXPLOSIONES, COLOSOS BLINDADOS Y ESCENARIOS IMPRESIONANTES-</h4>
+        Si estas interesado en la accion belica y lo que quieres es experimentar el punto de vista de una tripulacion de
+        vehiculos de combate a continuacion te doy
+        tres opciones que, en base a mi experiencia, pueden satisfacer lo que buscas y mas.
+    </div>
 
-    <div class="container-fluid text-center games">
+    <div class="container-fluid text-center games" id="games-ref">
         <div class="row">
-            <div class="col game" style="background-color: blue;">
-                <img src="./Imagenes/logo-world-of-tanks.png" class="img-fluid" alt="...">
-                <div id="carouselwot" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+            <div class="col game-wot">
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseInfoWot" role="button" aria-expanded="true"
+                        aria-controls="collapseInfoWot">
+                        <img src="./Imagenes/logo-world-of-tanks.png" class="img-fluid" alt="..."
+                            style="margin-top: 50px; margin-bottom: 25px">
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseInfoWot">
+                    <h4 class="exclamando">World of Tanks</h4>
+                    <p class="resumen text-center">es un juego multijugador masivo en línea desarrollado por la
+                        empresa bielorrusa Wargaming, en el que los jugadores entablan batallas en vehículos blindados
+                        del principio y mediado del siglo XX. Su jugabilidad estilo arcade con mecanicas únicas hacen de
+                        este titulo
+                        una excelente opcion para aquellos buscado competencia total.</p>
+                    <ul>
+                        <li class="lista-datos-cortos">Free to Play</li>
+                        <li class="lista-datos-cortos">Graficos excelentes</li>
+                        <li class="lista-datos-cortos">Grandes eventos</li>
+                        <li class="lista-datos-cortos">Gran cantidad de vehiculos</li>
+                    </ul>
+                    <div id="carouselwot" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/carrusel-wot/wot-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wot/wot-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wot/wot-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wot/wot-4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wot/wot-5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselwot"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselwot"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenes/carrusel-wot/wot-1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wot/wot-2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wot/wot-3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wot/wot-4.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wot/wot-5.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselwot"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselwot"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
 
-            <div class="col game" style="background-color: red;">
-                <img src="./Imagenes/logo-warthunder.png" class="img-fluid" alt="...">
-                <div id="carouselwt" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+            <div class="col game-wt">
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseInfoWt" role="button" aria-expanded="true"
+                        aria-controls="collapseInfoWt">
+                        <img src="./Imagenes/logo-warthunder.png" class="img-fluid" alt="...">
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseInfoWt">
+                    <h4 class="exclamando">WarThunder</h4>
+                    <p class="resumen text-center">es un juego militar en línea y multiplataforma desarrollado por la
+                        empresa
+                        húngara Gaijin Entertainment dedicado a aviones de combate,
+                        vehículos terrestres y fuerzas navales del siglo XX y XXI. Con una jugabilidad realista las
+                        extensas batallas en
+                        Warthunder premian el juego en equipo y el uso de buenas tacticas con una victoria aseguridad.
+                    </p>
+                    <ul>
+                        <li class="lista-datos-cortos">Free to Play</li>
+                        <li class="lista-datos-cortos">Graficos excelentes</li>
+                        <li class="lista-datos-cortos">Realista y complejo</li>
+                        <li class="lista-datos-cortos">Inmensa cantidad de vehiculos</li>
+                    </ul>
+                    <div id="carouselwt" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/carrusel-wt/wt-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wt/wt-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wt/wt-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wt/wt-4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-wt/wt-5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselwt"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselwt"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenes/carrusel-wt/wt-1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wt/wt-2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wt/wt-3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wt/wt-4.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-wt/wt-5.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselwt"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselwt"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
 
-            <div class="col game" style="background-color: green;">
-                <img src="./Imagenes/logo-ghpc.png" class="img-fluid" alt="...">
-                <div id="carouselghpc" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+            <div class="col game-ghpc">
+                <p>
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseInfoGhpc" role="button" aria-expanded="true"
+                        aria-controls="collapseInfoGhpc">
+                        <img src="./Imagenes/logo-ghpc.png" class="img-fluid" alt="..." style="margin-bottom: -27px">
+                    </a>
+                </p>
+                <div class="collapse show" id="collapseInfoGhpc">
+                    <h4 class="exclamando">Gunner, HEAT, PC!</h4>
+                    <p class="resumen text-center">es un juego de simulación desarrollado y publicado por la empresa
+                        estadounidense Radian Simulations. Uno de los lansamientos mas esperados por la comunidad amante
+                        de los tanques de guerra, GHPC pretende mostrar las experiencias crudas, violentas y
+                        sanguinarias
+                        de una tripulacion ubicada en un hipotetico escenario de la Guerra Fria.
+                    </p>
+                    <ul>
+                        <li class="lista-datos-cortos">Early Access Only</li>
+                        <li class="lista-datos-cortos">Buenos graficos</li>
+                        <li class="lista-datos-cortos">Muy realista y complejo</li>
+                        <li class="lista-datos-cortos">Inmersion pura</li>
+                    </ul>
+                    <div id="carouselghpc" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/carrusel-ghpc/ghpc-1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-ghpc/ghpc-2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-ghpc/ghpc-3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-ghpc/ghpc-4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/carrusel-ghpc/ghpc-5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselghpc"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselghpc"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./imagenes/carrusel-ghpc/ghpc-1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-ghpc/ghpc-2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-ghpc/ghpc-3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-ghpc/ghpc-4.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./imagenes/carrusel-ghpc/ghpc-5.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselghpc"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselghpc"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div class="conteiner-fluid opiniones">Opiniones Finales</div>
+    <div class="conteiner-fluid opiniones-finales" id="opinion-final">
+        <div class="row">
+            <div class="col-2">
+                <img src="./imagenes/EZ.jpg" class="card-img-top imagen-carta" alt="...">
+            </div>
+            <div class="col-10">Teniendo en cuenta sus diferencias WoT, WT y GHPC tienen puntos fuertes en diferentes
+                campos. Si buscas jugabilidad Arcade
+                lo mejor seria ir por Word of Tanks con sus HP bars y mecanicas extrañas, si buscas un poco de realismo
+                y batallas mas extensas elgiria WarThunder y , si no tenes problemas de gastar un poco de plata
+                y apollar a un equipo que por el momento viene ofreciendo mucho, la simulacion de Gunner, HEAT, PC! es
+                impresionante. Lo unico negativo de GHPC!, es que por el momento
+                no podemos disfrutar de batallas multijugador pero esto podria cambiar a final de año. Otro punto
+                importante es el Pay to Win, WoT y WT
+                tienen un grindeo de naciones sufrido si no estas en posecion de una cuenta Premium, pero tambien hay
+                que decir que los eventos para la comunindad que organizan
+                suelen dar excelentes regalos.
+                <br>
+                Habiendo jugado los 3 titulos mi eleccion personal es WarThunder ... ni tan arcade ni tan simulador y
+                con la posibilidad de experimentar batallas aereas y navales ...
+                posiblemente podria cambiar de opinion a futuro habiendo multijugador en GHPC! y tambien debo decir que
+                de vez en cuando suelo
+                volver a los campos de WoT. Para cerrar aca abajo te voy a dejar un link a una hermosa comunidad de armado y
+                diseño de tanques a escala,
+                uno de mis hobbies favoritos que sin lugar es un arte.
+                <p><a class="link-opacity-100 link-danger"
+                        href="https://www.leonardohobbies.com.ar/categoria-producto/plastimodelismo/militaria-maquetas/vehiculos_tanques_y_artilleria/">Modelos
+                        a escala</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    <div class="conteiner-fluid hobbies">Hobbies Similares</div>
+    </div>
+    </div>
 
-    <div class="conteiner-fluid form">Form Aqui</div>
+    <div class="conteiner-fluid form-registro">mi form</div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </body>
 
 </html>
