@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./staticWebsite.js"></script>
     <link rel="stylesheet" href="./staticWebsite.css">
 </head>
 
@@ -52,7 +51,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="#registrarseWeb">Registrarse</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -84,12 +83,14 @@
                         del principio y mediado del siglo XX. Su jugabilidad estilo arcade con mecanicas únicas hacen de
                         este titulo
                         una excelente opcion para aquellos buscado competencia total.</p>
-                    <ul>
-                        <li class="lista-datos-cortos">Free to Play</li>
-                        <li class="lista-datos-cortos">Graficos excelentes</li>
-                        <li class="lista-datos-cortos">Grandes eventos</li>
-                        <li class="lista-datos-cortos">Gran cantidad de vehiculos</li>
-                    </ul>
+                    <div class="div-datos-cortos">
+                        <ul class="lista-datos-cortos">
+                            <li>Free to Play</li>
+                            <li>Graficos excelentes</li>
+                            <li>Grandes eventos</li>
+                            <li>Gran cantidad de vehiculos</li>
+                        </ul>
+                    </div>
                     <div id="carouselwot" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselwot" data-bs-slide-to="0" class="active"
@@ -150,12 +151,14 @@
                         extensas batallas en
                         Warthunder premian el juego en equipo y el uso de buenas tacticas con una victoria aseguridad.
                     </p>
-                    <ul>
-                        <li class="lista-datos-cortos">Free to Play</li>
-                        <li class="lista-datos-cortos">Graficos excelentes</li>
-                        <li class="lista-datos-cortos">Realista y complejo</li>
-                        <li class="lista-datos-cortos">Inmensa cantidad de vehiculos</li>
-                    </ul>
+                    <div class="div-datos-cortos">
+                        <ul class="lista-datos-cortos">
+                            <li>Free to Play</li>
+                            <li>Graficos excelentes</li>
+                            <li>Realista y complejo</li>
+                            <li>Inmensa cantidad de vehiculos</li>
+                        </ul>
+                    </div>
                     <div id="carouselwt" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselwt" data-bs-slide-to="0" class="active"
@@ -215,12 +218,14 @@
                         sanguinarias
                         de una tripulacion ubicada en un hipotetico escenario de la Guerra Fria.
                     </p>
-                    <ul>
-                        <li class="lista-datos-cortos">Early Access Only</li>
-                        <li class="lista-datos-cortos">Buenos graficos</li>
-                        <li class="lista-datos-cortos">Muy realista y complejo</li>
-                        <li class="lista-datos-cortos">Inmersion pura</li>
-                    </ul>
+                    <div class="div-datos-cortos">
+                        <ul class="lista-datos-cortos">
+                            <li>Early Access Only</li>
+                            <li>Buenos graficos</li>
+                            <li>Muy realista y complejo</li>
+                            <li>Inmersion pura</li>
+                        </ul>
+                    </div>
                     <div id="carouselghpc" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselghpc" data-bs-slide-to="0" class="active"
@@ -288,7 +293,8 @@
                 con la posibilidad de experimentar batallas aereas y navales ...
                 posiblemente podria cambiar de opinion a futuro habiendo multijugador en GHPC! y tambien debo decir que
                 de vez en cuando suelo
-                volver a los campos de WoT. Para cerrar aca abajo te voy a dejar un link a una hermosa comunidad de armado y
+                volver a los campos de WoT. Para cerrar aca abajo te voy a dejar un link a una hermosa comunidad de
+                armado y
                 diseño de tanques a escala,
                 uno de mis hobbies favoritos que sin lugar es un arte.
                 <p><a class="link-opacity-100 link-danger"
@@ -302,8 +308,56 @@
     </div>
     </div>
 
-    <div class="conteiner-fluid form-registro">mi form</div>
+    <div class="conteiner-fluid div-registro" id="registrarseWeb">
+        <form class="needs-validation class-registro" id="formulario" novalidate>
+            <div class="mb-3">
+                <label for="inputUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="inputUsername" required>
+                <p>Entre 4 y 16 caracteres y sin caracteres especiales ni espacios.</p>
+                <div class="invalid-feedback">
+                    Usuario invalido.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" required>
+                <p>Tu contraseña debe tener entre 4 y 16 caracteres y no debe contener espacios.</p>
+                <div class="invalid-feedback">
+                    Contraseña invalida.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text" style="color: white">Nunca compartiremos tu email con nadie.</div>
+                <div class="invalid-feedback">
+                    El e-mail ingresado no es valido.
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Edad" aria-laber="Edad" id="inputEdad" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre (opcional)" aria-label="Nombre"
+                        id="inputNombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido (opcional)" aria-label="Apellido"
+                        id="inputApellido">
+                </div>
+            </div>
+            <br>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkMasInfo">
+                <label class="form-check-label" for="checkMasInfo">Recibir noticias relacionadas.</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="boton-registrarse">Registrarse</button>
+        </form>
+    </div>
 </body>
+
+<script type="text/javascript" src="./staticWebsite.js"></script>
 
 </html>
