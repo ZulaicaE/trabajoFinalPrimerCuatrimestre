@@ -3,6 +3,8 @@
 (() => {
     'use strict'
 
+    // Expresiones regulares usadas para los distintos campos.
+
     const expresiones = {
         usuario: /^[a-zA-Z0-9]{4,16}$/,
         password: /^\S{4,16}$/,
@@ -23,6 +25,8 @@
                 event.stopPropagation()
             }
             */
+
+            // Verifico cada uno de los campos del form con las siguientes lineas de codigo.
 
             let username = document.getElementById('inputUsername').value;
             if (!expresiones.usuario.test(username)) {
@@ -78,6 +82,8 @@
                 inputApellido.classList.remove('is-invalid');
             }
 
+            // Muestro en pantalla cada vez que hago un submit.
+
             console.clear();
             console.log('Username: ', username);
             console.log('Contraseña: ', contrasenia);
@@ -85,8 +91,8 @@
             console.log('Edad: ', edadUsuario);
             console.log('Nombre: ', nombreUsuario);
             console.log('Apellido: ', apellidoUsuario);
-            event.preventDefault();
-            
+            event.preventDefault(); // Evito que se envie el form.
+
             //form.classList.add('was-validated')
         }, false)
     })

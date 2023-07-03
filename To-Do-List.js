@@ -1,3 +1,6 @@
+
+// Agregamos la funcion eliminar al boton de una tarea.
+
 function eliminarTarea() {
 
     let liTarea = this.parentNode;
@@ -5,6 +8,8 @@ function eliminarTarea() {
     liTarea.parentNode.removeChild(liTarea);
 
 }
+
+// Funcion para marcar que la tarea se completo.
 
 function completaTarea() {
 
@@ -18,6 +23,8 @@ function completaTarea() {
 
 }
 
+// Creamos el li y los elementos que iran a adentro de el, y al final lo anexamos al ul.
+
 function agregaTarea() {
 
     let tarea = document.getElementById('nueva-tarea');
@@ -25,7 +32,7 @@ function agregaTarea() {
     if (tarea.value != '') {
         let nuevaTarea = document.createElement('li');
         nuevaTarea.setAttribute('id', 'class-tarea');
-        
+
         let spanTarea = document.createElement('span');
         spanTarea.setAttribute('class', 'mi-tarea');
         spanTarea.setAttribute('id', 'span-tarea');
@@ -52,7 +59,7 @@ function agregaTarea() {
         nuevaTarea.appendChild(checkLabel);
         nuevaTarea.appendChild(botonEliminar);
         listaTareas.appendChild(nuevaTarea);
-        
+
         tarea.value = '';
     }
 }

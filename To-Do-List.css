@@ -3,6 +3,7 @@ body {
 }
 
 .navbar {
+    font-family: 'Raleway', sans-serif;
     border-bottom-style: solid;
     border-color: lightslategray;
     border-width: 2px;
@@ -11,12 +12,14 @@ body {
 .div-lista {
     color: white;
     margin-top: 10px;
+    border-radius: 15px;
     border-style: solid;
     border-color: white;
 }
 
 .row {
     background-color: lightslategray;
+    border-radius: 15px;
     padding: 10px;
 }
 
@@ -52,9 +55,9 @@ body {
     transform: translate(250px);
 }
 
-.mi-tarea{
+.mi-tarea {
     position: absolute;
-    transform: translate(-400px, 0px);
+    transform: translate(-300px, 0px);
 }
 
 .boton-eliminar {
