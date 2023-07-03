@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(43, 48, 53, 1);
+}
+
+.navbar {
+    border-bottom-style: solid;
+    border-color: lightslategray;
+    border-width: 2px;
+}
+
+.div-lista {
+    color: white;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+.row {
+    background-color: lightslategray;
+    padding: 10px;
+}
+
+#ingrese-tarea {
+    padding-top: 5px;
+}
+
+#class-tarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tarea-completada {
+    text-decoration: line-through;
+    text-decoration-thickness: 9%;
+    text-decoration-color: blue;
+}
+
+#lista-tareas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.class-checkbox {
+    position: absolute;
+    transform: translate(250px);
+}
+
+.mi-tarea{
+    position: absolute;
+    transform: translate(-400px, 0px);
+}
+
+.boton-eliminar {
+    position: absolute;
+    transform: translate(300px);
+    background-image: url(./imagenes/delete-icon.png);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 45px;
+}
+
+.label-marcado {
+    position: absolute;
+    transform: translate(140px, 0px);
+}
